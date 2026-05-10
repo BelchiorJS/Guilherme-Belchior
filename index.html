@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- Meta tags obrigatórias para HTML5 -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfólio pessoal de Guilherme Ramos Belchior de Oliveira" />
+  <title>Guilherme Belchior | Portfólio</title>
+
+  <!-- Google Fonts: Playfair Display + DM Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Arquivo de estilos externo -->
+  <link rel="stylesheet" href="/styles/style.css" />
+</head>
+<body>
+
+  <!-- =============================
+       CABEÇALHO / MENU DE NAVEGAÇÃO
+       ============================= -->
+  <header class="header" id="topo">
+    <div class="header__inner">
+
+      <!-- Logo / Nome no topo -->
+      <a href="#sobre" class="header__logo">Guilherme Ramos Belchior de Oliveira</a>
+
+      <!-- Botão hamburguer para mobile (controlado via JS) -->
+      <button class="header__toggle" id="menuToggle" aria-label="Abrir menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- Menu de navegação principal com âncoras -->
+      <nav class="nav" id="mainNav">
+        <a href="#sobre"    class="nav__link">Sobre mim</a>
+        <a href="#formacao" class="nav__link">Formação</a>
+        <a href="#portfolio" class="nav__link">Portfólio</a>
+        <a href="#contato"  class="nav__link">Contato</a>
+
+        <!-- Botão de alternância de tema claro/escuro (JS) -->
+        <button class="btn-theme" id="themeToggle" aria-label="Alternar tema">
+          🌙
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- =============================
+       SEÇÃO HERO (Banner inicial)
+       ============================= -->
+  <section class="hero">
+    <div class="hero__content">
+      <!-- Tag decorativa -->
+      <span class="hero__tag">Desenvolvedor Backend</span>
+
+      <!-- Título principal com destaque -->
+      <h1 class="hero__title">
+        Olá, me chamo <br />
+        <span class="hero__name">Guilherme<br />Belchior</span>
+      </h1>
+
+      <p class="hero__sub">
+        Estudante de Tecnologia da Informação apaixonado por desenvolvimento
+        de sistemas, com foco em <strong>.NET</strong>, <strong>SQL Server</strong>
+        e <strong>Angular</strong>.
+      </p>
+
+      <!-- Botões de ação -->
+      <div class="hero__actions">
+        <a href="#contato" class="btn btn--primary">Fale comigo</a>
+        <a href="#portfolio" class="btn btn--outline">Ver projetos</a>
+      </div>
+    </div>
+
+    <!-- Decoração geométrica do lado direito -->
+    <div class="hero__deco" aria-hidden="true">
+      <div class="deco__circle deco__circle--1"></div>
+      <div class="deco__circle deco__circle--2"></div>
+      <div class="deco__initials">GO</div>
+    </div>
+  </section>
+
+  <!-- =============================
+       SEÇÃO: SOBRE MIM
+       ============================= -->
+  <section class="section" id="sobre">
+    <div class="container">
+
+      <!-- Título da seção com numeração decorativa -->
+      <div class="section__header">
+        <span class="section__num">01</span>
+        <h2 class="section__title">Sobre mim</h2>
+      </div>
+
+      <div class="about__grid">
+        <!-- Card com avatar e informações rápidas -->
+        <div class="about__card">
+          <div class="about__avatar">
+            <span>GO</span>
+          </div>
+          <ul class="about__info">
+            <li><span>📍</span> São Paulo, SP</li>
+            <li><span>🎓</span> Engenharia de Software | Ciência de Dados </li>
+            <li><span>💻</span> Foco em Back-end &amp; Web</li>
+            <li><span>🔒</span> Área de interesse: CFTV / Segurança</li>
+          </ul>
+        </div>
+
+        <!-- Texto de apresentação -->
+        <div class="about__text">
+          <p>
+            Me chamo <strong>Guilherme Ramos Belchior de Oliveira</strong> e estou em formação na área de
+            Tecnologia da Informação. Tenho interesse especial no desenvolvimento de sistemas
+            integrados, com foco em soluções de <strong>CFTV (Circuito Fechado de TV)</strong> e
+            automação de segurança.
+          </p>
+          <p>
+            Estou aprendendo ativamente as tecnologias <strong>.NET</strong>, <strong>SQL Server</strong>
+            e <strong>Angular</strong>, buscando construir uma base sólida para desenvolver sistemas
+            robustos e escaláveis.
+          </p>
+          <p>
+            Fora da programação, tenho interesse em tecnologia de segurança eletrônica,
+            infraestrutura de redes e automação residencial.
+          </p>
+
+          <!-- Hobbies / interesses em formato de tags -->
+          <div class="tags">
+            <span class="tag">🔌 Eletrônica</span>
+            <span class="tag">📷 CFTV</span>
+            <span class="tag">🌐 Redes</span>
+            <span class="tag">📚 Leitura técnica</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================
+       SEÇÃO: FORMAÇÃO
+       ============================= -->
+  <section class="section section--alt" id="formacao">
+    <div class="container">
+
+      <div class="section__header">
+        <span class="section__num">02</span>
+        <h2 class="section__title">Formação</h2>
+      </div>
+
+      <!-- Grade com 3 colunas: Educação, Cursos, Idiomas -->
+      <div class="formation__grid">
+
+        <!-- Coluna 1: Educação -->
+        <div class="formation__col">
+          <h3 class="formation__col-title">🎓 Educação</h3>
+
+          <!-- Card de curso atual -->
+          <div class="timeline-card timeline-card--active">
+            <span class="timeline-card__badge">Em andamento</span>
+            <h4>Engenharia de Software</h4>
+            <p class="timeline-card__inst">UNINTER – Centro Universitário Internacional</p>
+            <p class="timeline-card__period">2025 – 2029</p>
+            <p>Curso superior com foco em desenvolvimento web, banco de dados, engenharia de software e programação orientada a objetos.</p>
+          </div>
+
+          <!-- Card de ensino médio -->
+          <div class="timeline-card">
+            <h4>Ensino Médio Completo</h4>
+            <p class="timeline-card__inst">Escola Estadual</p>
+            <p class="timeline-card__period">Concluído</p>
+          </div>
+        </div>
+
+        <!-- Coluna 2: Cursos técnicos -->
+        <div class="formation__col">
+          <h3 class="formation__col-title">🛠️ Cursos &amp; Habilidades</h3>
+
+          <div class="skill-list">
+            <!-- Cada item com barra de progresso visual (CSS puro) -->
+            <div class="skill-item">
+              <span class="skill-item__name">.NET / C#</span>
+              <div class="skill-item__bar">
+                <div class="skill-item__fill" style="--w: 30%"></div>
+              </div>
+              <span class="skill-item__level">Iniciante</span>
+            </div>
+
+            <div class="skill-item">
+              <span class="skill-item__name">SQL Server</span>
+              <div class="skill-item__bar">
+                <div class="skill-item__fill" style="--w: 30%"></div>
+              </div>
+              <span class="skill-item__level">Iniciante</span>
+            </div>
+
+            <div class="skill-item">
+              <span class="skill-item__name">Angular / TypeScript</span>
+              <div class="skill-item__bar">
+                <div class="skill-item__fill" style="--w: 25%"></div>
+              </div>
+              <span class="skill-item__level">Iniciante</span>
+            </div>
+
+            <div class="skill-item">
+              <span class="skill-item__name">HTML5 &amp; CSS3</span>
+              <div class="skill-item__bar">
+                <div class="skill-item__fill" style="--w: 55%"></div>
+              </div>
+              <span class="skill-item__level">Intermediário</span>
+            </div>
+
+            <div class="skill-item">
+              <span class="skill-item__name">JavaScript</span>
+              <div class="skill-item__bar">
+                <div class="skill-item__fill" style="--w: 40%"></div>
+              </div>
+              <span class="skill-item__level">Básico-Inter.</span>
+            </div>
+
+            <div class="skill-item">
+              <span class="skill-item__name">Lógica de Programação</span>
+              <div class="skill-item__bar">
+                <div class="skill-item__fill" style="--w: 60%"></div>
+              </div>
+              <span class="skill-item__level">Intermediário</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Coluna 3: Idiomas -->
+        <div class="formation__col">
+          <h3 class="formation__col-title">🌍 Idiomas</h3>
+
+          <div class="lang-card">
+            <div class="lang-card__flag">🇧🇷</div>
+            <div>
+              <strong>Português</strong>
+              <p>Nativo</p>
+            </div>
+            <div class="lang-card__dots">
+              <!-- 5 pontos preenchidos = fluente -->
+              <span class="dot dot--fill"></span>
+              <span class="dot dot--fill"></span>
+              <span class="dot dot--fill"></span>
+              <span class="dot dot--fill"></span>
+              <span class="dot dot--fill"></span>
+            </div>
+          </div>
+
+          <div class="lang-card">
+            <div class="lang-card__flag">🇺🇸</div>
+            <div>
+              <strong>Inglês</strong>
+              <p>Básico / Técnico</p>
+            </div>
+            <div class="lang-card__dots">
+              <!-- 2 pontos preenchidos = básico -->
+              <span class="dot dot--fill"></span>
+              <span class="dot dot--fill"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+          </div>
+
+          <!-- Certificados (área para adicionar futuramente) -->
+          <h3 class="formation__col-title" style="margin-top:2rem">📜 Certificados</h3>
+          <div class="cert-card">
+            <span>🏅</span>
+            <div>
+              <strong>Power BI Avançado</strong>
+              <p>UDEMY – 2026</p>
+            </div>
+          </div>
+          <div class="cert-card">
+            <span>🏅</span>
+            <div>
+              <strong>Python para Dados</strong>
+              <p>UDEMY - 2026</p>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /formation__grid -->
+    </div>
+  </section>
+
+  <!-- =============================
+       SEÇÃO: PORTFÓLIO
+       ============================= -->
+  <section class="section" id="portfolio">
+    <div class="container">
+
+      <div class="section__header">
+        <span class="section__num">03</span>
+        <h2 class="section__title">Portfólio</h2>
+      </div>
+
+      <p class="section__desc">
+        Projetos desenvolvidos durante minha formação. Ainda no início da jornada,
+        mas cada projeto representa aprendizado real e dedicação.
+      </p>
+
+      <!-- Grid de cards de projetos -->
+      <div class="projects__grid">
+
+        <!-- Card 1: Este portfólio -->
+        <article class="project-card">
+          <div class="project-card__top" style="--card-color: #2563eb">
+            <span class="project-card__icon">🌐</span>
+          </div>
+          <div class="project-card__body">
+            <h3>Portfólio Pessoal</h3>
+            <p>Site de portfólio desenvolvido com HTML5, CSS3 e JavaScript puro. Single Page com navegação por âncoras, tema claro/escuro e formulário validado.</p>
+            <div class="project-card__tags">
+              <span class="tag tag--blue">HTML5</span>
+              <span class="tag tag--blue">CSS3</span>
+              <span class="tag tag--blue">JavaScript</span>
+            </div>
+          </div>
+          <div class="project-card__footer">
+            <!-- Link para o repositório GitHub (substituir pela URL real) -->
+            <a href="https://github.com/BelchiorJS/Guilherme-Belchior" target="_blank" rel="noopener" class="btn btn--sm">Ver no GitHub</a>
+          </div>
+        </article>
+
+        <!-- Card 2: Projeto CFTV (conceitual) -->
+        <article class="project-card">
+          <div class="project-card__top" style="--card-color: #16a34a">
+            <span class="project-card__icon">📷</span>
+          </div>
+          <div class="project-card__body">
+            <h3>Sistema CFTV Integrador</h3>
+            <p>Projeto conceitual de um sistema integrador de câmeras de segurança. Em desenvolvimento com .NET no back-end, Angular no front-end e SQL Server como banco de dados.</p>
+            <div class="project-card__tags">
+              <span class="tag tag--green">.NET</span>
+              <span class="tag tag--green">Angular</span>
+              <span class="tag tag--green">SQL Server</span>
+            </div>
+          </div>
+          <div class="project-card__footer">
+            <span class="badge badge--dev">Em desenvolvimento</span>
+          </div>
+        </article>
+
+        <!-- Card 3: Automação de e-mail em python -->
+        <article class="project-card">
+          <div class="project-card__top" style="--card-color: #9333ea">
+            <span class="project-card__icon">💻</span>
+          </div>
+          <div class="project-card__body">
+            <h3>Automação de e-mail em PYTHON</h3>
+            <p>Automação desenvolvida para empresa que trabalho atualmente, que envia um e-mail automático semanal como parte de um protoclo interno de controle de acessos.</p>
+            <div class="project-card__tags">
+              <span class="tag tag--purple">Python</span>
+              <span class="tag tag--purple">Bibliotecas - Holydays | Pw32Win</span>
+            </div>
+          </div>
+          <div class="project-card__footer">
+            <a href="https://github.com/BelchiorJS/WeekendAccess-Alert-Python-Email-Automation" target="_blank" rel="noopener" class="btn btn--sm">Ver repositório</a>
+          </div>
+        </article>
+
+        <!-- Card 4: Espaço para projetos futuros -->
+        <article class="project-card project-card--future">
+          <div class="project-card__top" style="--card-color: #64748b">
+            <span class="project-card__icon">🚀</span>
+          </div>
+          <div class="project-card__body">
+            <h3>Próximo projeto</h3>
+            <p>Em breve novas aplicações desenvolvidas durante o curso e projetos pessoais na área de segurança eletrônica e automação.</p>
+            <div class="project-card__tags">
+              <span class="tag tag--gray">Em breve</span>
+            </div>
+          </div>
+          <div class="project-card__footer">
+            <span class="badge badge--soon">🔔 Em breve</span>
+          </div>
+        </article>
+
+      </div><!-- /projects__grid -->
+    </div>
+  </section>
+
+  <!-- =============================
+       SEÇÃO: CONTATO
+       ============================= -->
+  <section class="section section--alt" id="contato">
+    <div class="container">
+
+      <div class="section__header">
+        <span class="section__num">04</span>
+        <h2 class="section__title">Contato</h2>
+      </div>
+
+      <div class="contact__grid">
+
+        <!-- Informações de contato -->
+        <div class="contact__info">
+          <p class="contact__intro">
+            Fique à vontade para entrar em contato! Estou aberto a oportunidades,
+            parcerias de estudo e troca de conhecimento na área de TI.
+          </p>
+
+          <ul class="contact__list">
+            <li>
+              <span class="contact__icon">📧</span>
+              <a href="mailto:guilhermeramosbelchior@gmail.com">Meu e-mail</a>
+            </li>
+            <li>
+              <span class="contact__icon">💼</span>
+              <a href="https://www.linkedin.com/in/guilherme-ramos-belchior-de-oliveira-8a711a244/" target="_blank" rel="noopener">LinkedIn</a>
+            </li>
+            <li>
+              <span class="contact__icon">🐙</span>
+              <a href="https://github.com/BelchiorJS" target="_blank" rel="noopener">GitHub</a>
+            </li>
+            <li>
+              <span class="contact__icon">📍</span>
+              <span>São Paulo – Brasil</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Formulário de contato com validação em JavaScript -->
+        <form class="contact__form" id="contactForm" novalidate>
+
+          <!-- Campo: Nome -->
+          <div class="form-group">
+            <label for="nome">Nome completo *</label>
+            <input
+              type="text"
+              id="nome"
+              name="nome"
+              placeholder="Seu nome"
+              autocomplete="name"
+            />
+            <!-- Mensagem de erro exibida via JS -->
+            <span class="form-error" id="erroNome"></span>
+          </div>
+
+          <!-- Campo: E-mail -->
+          <div class="form-group">
+            <label for="email">E-mail *</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="seu@email.com"
+              autocomplete="email"
+            />
+            <span class="form-error" id="erroEmail"></span>
+          </div>
+
+          <!-- Campo: Mensagem -->
+          <div class="form-group">
+            <label for="mensagem">Mensagem *</label>
+            <textarea
+              id="mensagem"
+              name="mensagem"
+              rows="5"
+              placeholder="Escreva sua mensagem aqui..."
+            ></textarea>
+            <span class="form-error" id="erroMensagem"></span>
+          </div>
+
+          <!-- Botão de envio -->
+          <button type="submit" class="btn btn--primary btn--full">
+            Enviar mensagem ✉️
+          </button>
+
+          <!-- Modal de confirmação de envio (exibido via JS) -->
+          <div class="form-success" id="formSuccess" style="display:none">
+            ✅ Mensagem enviada com sucesso! Obrigado pelo contato.
+          </div>
+
+        </form>
+
+      </div><!-- /contact__grid -->
+    </div>
+  </section>
+
+  <!-- =============================
+       RODAPÉ
+       ============================= -->
+  <footer class="footer">
+    <div class="container">
+      <p>
+        Desenvolvido por <strong>Guilherme Ramos Belchior de Oliveira</strong>
+        — HTML5, CSS3 &amp; JavaScript puro
+      </p>
+      <p class="footer__year">© <span id="year"></span> Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Script JavaScript externo (carregado no final do body para melhor performance) -->
+  <script src="/scripts/script.js"></script>
+
+</body>
+</html>
